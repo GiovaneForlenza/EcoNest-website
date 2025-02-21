@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.buttons .primary {
+  font-size: 18px;
+  background-color: #311304;
+  color: White;
+  padding: 6px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.buttons .secondary-outlined {
+  font-size: 18px;
+  color: #311304;
+  padding: 6px 30px;
+  border: 1px solid #311304;
+  cursor: pointer;
+}
+
+.header {
+  border-bottom: 1px solid #311304;
+  background-color: #efdbc0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 64px;
+}
+.header .nav {
+  font-size: 18px;
+}
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.header .nav ul li {
+  cursor: pointer;
+  color: #7d634f;
+}
+.header .nav ul li.active {
+  color: #311304;
+  font-weight: bold;
+}
+.header .nav ul .buttons {
+  border: 1px solid #000;
+}
+.header .nav ul .buttons div {
+  border-radius: 50px;
+}
+
+.hero-section {
+  height: 80vh;
+  background-image: url("../assets/photos/hero-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 64px;
+}
+.hero-section .hero-text {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  max-width: 640px;
+}
+.hero-section .hero-text h1 {
+  font-size: 56px;
+  color: #311304;
+}
+.hero-section .hero-text p {
+  color: #000;
+}/*# sourceMappingURL=index.css.map */
