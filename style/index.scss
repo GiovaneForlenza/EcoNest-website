@@ -24,7 +24,7 @@
     font-size: 18px;
     color: v.$secondary-button-border;
     padding: 6px 30px;
-    // border-radius: 50px;
+    border-radius: 8px;
     border: 1px solid v.$secondary-button-border;
     cursor: pointer;
   }
@@ -74,10 +74,9 @@
   justify-content: flex-start;
   padding: 0 64px;
   .hero-text {
-    border: 1px solid #000;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     text-align: left;
     max-width: 640px;
@@ -87,6 +86,9 @@
     }
     p {
       color: v.$text-color;
+    }
+    .buttons {
+      margin-top: 16px;
     }
   }
 }
