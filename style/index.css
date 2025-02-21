@@ -5,6 +5,11 @@
   color: #000;
 }
 
+h2 {
+  font-size: 48px;
+  color: #311304;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -62,6 +67,11 @@
   border-radius: 50px;
 }
 
+.section {
+  padding: 64px 64px;
+  box-sizing: border-box;
+}
+
 .hero-section {
   height: 80vh;
   background-image: url("../assets/photos/hero-background.png");
@@ -71,7 +81,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 64px;
 }
 .hero-section .hero-text {
   display: flex;
@@ -90,4 +99,49 @@
 }
 .hero-section .hero-text .buttons {
   margin-top: 16px;
+}
+
+.flex-two-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+.flex-two-col .left {
+  border: 1px solid #000;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 32px;
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-direction: column;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 4px rgba(49, 19, 4, 0.2));
+  background-color: #fff;
+}
+.cards .card .group {
+  text-align: center;
+}
+.cards .card .title {
+  font-size: 24px;
+  color: #311304;
+}
+.cards .card .text {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

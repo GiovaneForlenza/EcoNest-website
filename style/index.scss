@@ -6,6 +6,12 @@
   font-family: "Poppins", sans-serif;
   color: v.$text-color;
 }
+
+h2 {
+  font-size: 48px;
+  color: v.$title-color;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -63,6 +69,11 @@
   }
 }
 
+.section {
+  padding: 64px 64px;
+  box-sizing: border-box;
+}
+
 .hero-section {
   height: 80vh;
   background-image: url("../assets/photos/hero-background.png");
@@ -72,7 +83,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 64px;
   .hero-text {
     display: flex;
     align-items: flex-start;
@@ -89,6 +99,51 @@
     }
     .buttons {
       margin-top: 16px;
+    }
+  }
+}
+
+.flex-two-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+  .left {
+    border: 1px solid #000;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 32px;
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-direction: column;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    filter: v.$drop-shadow;
+    background-color: #fff;
+    .group {
+      text-align: center;
+    }
+    .title {
+      font-size: 24px;
+      color: v.$title-color;
+    }
+    .text {
+      text-align: center;
     }
   }
 }
