@@ -7,15 +7,43 @@
   color: v.$text-color;
 }
 
+.flex {
+  display: flex;
+  // flex-wrap: wrap;
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+  &.center-start {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &.start-start {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  &.center-spaceb {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &.stretch-center {
+    align-items: stretch;
+    justify-content: center;
+  }
+  &.column {
+    flex-direction: column;
+  }
+}
+
 h2 {
   font-size: 48px;
   color: v.$title-color;
 }
+p {
+  font-size: 16px;
+}
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
   .primary {
     font-size: 18px;
@@ -33,23 +61,27 @@ h2 {
     border-radius: 8px;
     border: 1px solid v.$secondary-button-border;
     cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background-color: v.$primary-button-background;
+      color: white;
+    }
+  }
+  .tertiary {
+    color: v.$title-color;
+    cursor: pointer;
+    font-size: 16px;
   }
 }
 
 .header {
   border-bottom: 1px solid v.$header-bottom-border-color;
   background-color: v.$background-yellow-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 8px 64px;
   .nav {
     font-size: 18px;
     ul {
-      display: flex;
       list-style: none;
-      align-items: center;
-      justify-content: center;
       gap: 32px;
       li {
         cursor: pointer;
@@ -81,13 +113,9 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   .hero-text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
+    gap: 16px;
     text-align: left;
     max-width: 640px;
     h1 {
@@ -104,35 +132,24 @@ h2 {
 }
 
 .flex-two-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 180px;
   .left {
     border: 1px solid #000;
     gap: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     max-width: 600px;
   }
 }
 
 .cards {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
   gap: 32px;
   .card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     gap: 16px;
     flex-direction: column;
     padding: 8px;
     box-sizing: border-box;
     border-radius: 8px;
+    width: 100%;
     filter: v.$drop-shadow;
     background-color: #fff;
     .group {
@@ -145,5 +162,110 @@ h2 {
     .text {
       text-align: center;
     }
+  }
+}
+
+#transform {
+  justify-content: space-around;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  .left {
+    gap: 32px;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+#discover {
+  border: 1px solid #000;
+  background-color: v.$background-yellow-color;
+  .text {
+    max-width: 800px;
+    text-align: center;
+    gap: 16px;
+  }
+}
+#discover {
+  gap: 32px;
+  .image-cards-wrapper {
+    width: 100%;
+    gap: 32px;
+    .image-card {
+      gap: 16px;
+      #img-card-product-bag {
+        background-image: url("../assets/photos/products-bag-1.png");
+      }
+      #img-card-tooth-brush {
+        background-image: url("../assets/photos/tooth-brushes.png");
+      }
+      #img-card-fruit-bag {
+        background-image: url("../assets/photos/fruit-bag.png");
+      }
+      .img {
+        height: 260px;
+        background-size: cover;
+      }
+
+      .text {
+        text-align: left;
+        .title {
+          h3 {
+            font-size: 32px;
+          }
+          .description {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#feedback {
+  background: v.$yellow-to-green-gradient;
+  .feedback-container {
+    border: 1px solid #000;
+    gap: 32px;
+    .feedback-card {
+      background: #fff;
+      padding: 16px;
+      box-sizing: border-box;
+      border-radius: 16px;
+      gap: 16px;
+      .text {
+        font-size: 16px;
+      }
+      .profile {
+        gap: 8px;
+        .image {
+          width: 80px;
+          img {
+            width: 100%;
+          }
+        }
+        .name {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .profession {
+          font-size: 16px;
+          color: v.$secondary-text-color;
+        }
+      }
+    }
+  }
+}
+
+#subscribe {
+  background-color: v.$background-green-color;
+  .title {
+    h2 {
+      color: v.$green-title;
+    }
+  }
+  .text-and-buttons {
+    align-items: flex-start;
+    gap: 16px;
   }
 }

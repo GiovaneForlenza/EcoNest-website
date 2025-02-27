@@ -4,19 +4,18 @@ $title-color: #311304;
 $text-color: #000;
 $secondary-text-color: #666666;
 $secondary-nav-item: #7d634f;
+$green-title: #123620;
 
 //Background
-$yellow-to-green-gradient: linear-gradient(
-  180deg,
-  rgba(239, 219, 192, 1) 63%,
-  rgba(195, 213, 197, 1) 100%
-);
 $background-yellow-color: #efdbc0;
 $background-green-color: #c3d5c5;
 $header-bottom-border-color: #311304;
 $primary-button-background: #311304;
 $secondary-button-border: #311304;
 
+$yellow-to-green-gradient: linear-gradient(
+  180deg,
+  $background-yellow-color 63%,
+  $background-green-color 100%
+);
 $drop-shadow: drop-shadow(0px 0px 4px rgba(49, 19, 4, 0.2));
-
-

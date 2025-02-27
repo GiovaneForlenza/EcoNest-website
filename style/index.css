@@ -5,15 +5,43 @@
   color: #000;
 }
 
+.flex {
+  display: flex;
+}
+.flex.center {
+  align-items: center;
+  justify-content: center;
+}
+.flex.center-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex.start-start {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.flex.center-spaceb {
+  align-items: center;
+  justify-content: space-between;
+}
+.flex.stretch-center {
+  align-items: stretch;
+  justify-content: center;
+}
+.flex.column {
+  flex-direction: column;
+}
+
 h2 {
   font-size: 48px;
   color: #311304;
 }
 
+p {
+  font-size: 16px;
+}
+
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
 }
 .buttons .primary {
@@ -32,24 +60,28 @@ h2 {
   border-radius: 8px;
   border: 1px solid #311304;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.buttons .secondary-outlined:hover {
+  background-color: #311304;
+  color: white;
+}
+.buttons .tertiary {
+  color: #311304;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .header {
   border-bottom: 1px solid #311304;
   background-color: #efdbc0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 8px 64px;
 }
 .header .nav {
   font-size: 18px;
 }
 .header .nav ul {
-  display: flex;
   list-style: none;
-  align-items: center;
-  justify-content: center;
   gap: 32px;
 }
 .header .nav ul li {
@@ -79,14 +111,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 .hero-section .hero-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  gap: 16px;
   text-align: left;
   max-width: 640px;
 }
@@ -102,36 +130,25 @@ h2 {
 }
 
 .flex-two-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 180px;
 }
 .flex-two-col .left {
   border: 1px solid #000;
   gap: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   max-width: 600px;
 }
 
 .cards {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
   gap: 32px;
 }
 .cards .card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   gap: 16px;
   flex-direction: column;
   padding: 8px;
   box-sizing: border-box;
   border-radius: 8px;
+  width: 100%;
   filter: drop-shadow(0px 0px 4px rgba(49, 19, 4, 0.2));
   background-color: #fff;
 }
@@ -144,4 +161,105 @@ h2 {
 }
 .cards .card .text {
   text-align: center;
+}
+
+#transform {
+  justify-content: space-around;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+#transform .left {
+  gap: 32px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#discover {
+  border: 1px solid #000;
+  background-color: #efdbc0;
+}
+#discover .text {
+  max-width: 800px;
+  text-align: center;
+  gap: 16px;
+}
+
+#discover {
+  gap: 32px;
+}
+#discover .image-cards-wrapper {
+  width: 100%;
+  gap: 32px;
+}
+#discover .image-cards-wrapper .image-card {
+  gap: 16px;
+}
+#discover .image-cards-wrapper .image-card #img-card-product-bag {
+  background-image: url("../assets/photos/products-bag-1.png");
+}
+#discover .image-cards-wrapper .image-card #img-card-tooth-brush {
+  background-image: url("../assets/photos/tooth-brushes.png");
+}
+#discover .image-cards-wrapper .image-card #img-card-fruit-bag {
+  background-image: url("../assets/photos/fruit-bag.png");
+}
+#discover .image-cards-wrapper .image-card .img {
+  height: 260px;
+  background-size: cover;
+}
+#discover .image-cards-wrapper .image-card .text {
+  text-align: left;
+}
+#discover .image-cards-wrapper .image-card .text .title h3 {
+  font-size: 32px;
+}
+#discover .image-cards-wrapper .image-card .text .title .description {
+  font-size: 16px;
+}
+
+#feedback {
+  background: linear-gradient(180deg, #efdbc0 63%, #c3d5c5 100%);
+}
+#feedback .feedback-container {
+  border: 1px solid #000;
+  gap: 32px;
+}
+#feedback .feedback-container .feedback-card {
+  background: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  gap: 16px;
+}
+#feedback .feedback-container .feedback-card .text {
+  font-size: 16px;
+}
+#feedback .feedback-container .feedback-card .profile {
+  gap: 8px;
+}
+#feedback .feedback-container .feedback-card .profile .image {
+  width: 80px;
+}
+#feedback .feedback-container .feedback-card .profile .image img {
+  width: 100%;
+}
+#feedback .feedback-container .feedback-card .profile .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+#feedback .feedback-container .feedback-card .profile .profession {
+  font-size: 16px;
+  color: #666666;
+}
+
+#subscribe {
+  background-color: #c3d5c5;
+}
+#subscribe .title h2 {
+  color: #123620;
+}
+#subscribe .text-and-buttons {
+  align-items: flex-start;
+  gap: 16px;
 }/*# sourceMappingURL=index.css.map */

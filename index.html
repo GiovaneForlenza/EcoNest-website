@@ -7,47 +7,49 @@
     <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header flex center-spaceb">
       <div class="logo">
         <img src="./assets/logo.png" alt="" />
       </div>
       <div class="nav">
-        <ul>
+        <ul class="flex center">
           <li class="active">Home Goods</li>
           <li class="">Eco Tips</li>
           <li class="">Shop Now</li>
           <li class="">More Info</li>
-          <div class="buttons">
+          <div class="buttons flex center">
             <div class="secondary-outlined">Login</div>
             <div class="primary">Shop</div>
           </div>
         </ul>
       </div>
     </div>
-    <div class="hero-section section">
-      <div class="hero-text">
+    <div class="hero-section section flex center-start">
+      <div class="hero-text flex start-start">
         <h1>Transform your kitchen with Eco-Friendly products</h1>
         <p>
           Discover a range of sustainable kitchen essentials that make cooking
           greener and easier. Join us in creating a healthier planet, one meal
           at a time.
         </p>
-        <div class="buttons">
+        <div class="buttons flex center">
           <div class="primary">Shop Now</div>
           <div class="secondary-outlined">Learn More</div>
         </div>
       </div>
     </div>
-    <div class="section flex-two-col">
-      <div class="left">
-        <h2>Transform Your Kitchen with Sustainable Choices</h2>
-        <p>
-          Discover our range of eco-friendly kitchen products designed to reduce
-          waste and enhance your cooking experience. Join the movement towards a
-          greener kitchen today!
-        </p>
-        <div class="cards">
-          <div class="card">
+    <div class="section flex" id="transform">
+      <div class="left flex">
+        <div class="text">
+          <h2>Transform Your Kitchen with Sustainable Choices</h2>
+          <p>
+            Discover our range of eco-friendly kitchen products designed to
+            reduce waste and enhance your cooking experience. Join the movement
+            towards a greener kitchen today!
+          </p>
+        </div>
+        <div class="cards flex strech-center">
+          <div class="card flex center-start">
             <div class="group">
               <div class="icon">
                 <img src="./assets/icons/eco-friendly.png" alt="" />
@@ -58,7 +60,7 @@
               <p>Sustainable materials that are good for you and the planet.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card flex center-start">
             <div class="group">
               <div class="icon">
                 <img src="./assets/icons/eco-friendly.png" alt="" />
@@ -73,13 +75,132 @@
             </div>
           </div>
         </div>
-        <div class="buttons">
+        <div class="buttons flex center-start">
           <div class="secondary-outlined">Shop Now</div>
-          <div class="primary">Shop</div>
+          <div class="tertiary">Learn more ></div>
         </div>
       </div>
       <div class="right">
         <img src="./assets/photos/utencils.png" alt="" />
+      </div>
+    </div>
+    <div class="section flex center column" id="discover">
+      <div class="text flex column">
+        <h2>Transform Your Kitchen with Sustainable Choices</h2>
+        <p>
+          Discover our range of eco-friendly kitchen products designed to reduce
+          waste and enhance your cooking experience. Join the movement towards a
+          greener kitchen today!
+        </p>
+      </div>
+      <div class="image-cards-wrapper flex">
+        <div class="image-card flex column">
+          <div class="img" id="img-card-product-bag"></div>
+          <div class="text">
+            <div class="title">
+              <h3>Reduce Waste with Sustainable Choices</h3>
+            </div>
+            <div class="description">
+              By choosing eco-friendly products, you significantly cut down on
+              plastic waste.
+            </div>
+          </div>
+        </div>
+        <div class="image-card flex column">
+          <div class="img" id="img-card-fruit-bag"></div>
+          <div class="text">
+            <div class="title">
+              <h3>Save Money While Being Eco-Conscious</h3>
+            </div>
+            <div class="description">
+              Investing in durable, reusable items saves you money over time.
+            </div>
+          </div>
+        </div>
+        <div class="image-card flex column">
+          <div class="img" id="img-card-tooth-brush"></div>
+          <div class="text">
+            <div class="title">
+              <h3>Promote Health for You and Your Family</h3>
+            </div>
+            <div class="description">
+              Eco-friendly products are often made from non-toxic materials,
+              ensuring safer cooking.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section flex column" id="feedback">
+      <div class="feedback-container flex">
+        <div class="feedback-card flex column">
+          <div class="text">
+            "I absolutely love my EcoNest Kitchen Bundle! The silicone food
+            storage bags are a game-changer, they’re so easy to clean and
+            perfect for meal prep. The beeswax wraps are my new favorite way to
+            keep leftovers fresh. Highly recommend this bundle to anyone looking
+            to cut down on plastic waste!"
+          </div>
+          <div class="profile flex center">
+            <div class="image">
+              <img src="./assets/user-review/user-review-1.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="name">Sarah T.</div>
+              <div class="profession">Chef, Green Eats</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card flex column">
+          <div class="text">
+            "The On-the-Go Bundle is perfect for my busy lifestyle. I take the
+            bamboo cutlery set and glass straw everywhere with me. It’s stylish,
+            functional, and makes me feel good about reducing my environmental
+            footprint. EcoNest has thought of everything!" 
+          </div>
+          <div class="profile flex center">
+            <div class="image">
+              <img src="./assets/user-review/user-review-2.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="name">Jamie L.</div>
+              <div class="profession">Chef, Green Eats</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card flex column">
+          <div class="text">
+            "The On-the-Go Bundle is perfect for my busy lifestyle. I take the
+            bamboo cutlery set and glass straw everywhere with me. It’s stylish,
+            functional, and makes me feel good about reducing my environmental
+            footprint. EcoNest has thought of everything!"
+          </div>
+          <div class="profile flex center">
+            <div class="image">
+              <img src="./assets/user-review/user-review-3.png" alt="" />
+            </div>
+            <div class="text">
+              <div class="name">Sarah T.</div>
+              <div class="profession">Chef, Green Eats</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section flex" id="subscribe">
+      <div class="title">
+        <h2>Discover Sustainable Kitchen Essentials</h2>
+      </div>
+      <div class="text-and-buttons flex column">
+        <div class="text">
+          Transform your kitchen with our eco-friendly products designed for a
+          sustainable lifestyle. Join our community to stay updated on the
+          latest arrivals and exclusive offers.
+        </div>
+        <div class="buttons flex center">
+          <div class="primary">Shop now</div>
+          <div class="secondary-outlined">Subscribe</div>
+        </div>
       </div>
     </div>
   </body>
