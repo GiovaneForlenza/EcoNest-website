@@ -92,9 +92,6 @@ p {
   color: #311304;
   font-weight: bold;
 }
-.header .nav ul .buttons {
-  border: 1px solid #000;
-}
 .header .nav ul .buttons div {
   border-radius: 50px;
 }
@@ -133,7 +130,6 @@ p {
   gap: 180px;
 }
 .flex-two-col .left {
-  border: 1px solid #000;
   gap: 16px;
   flex-direction: column;
   max-width: 600px;
@@ -176,7 +172,6 @@ p {
 }
 
 #discover {
-  border: 1px solid #000;
   background-color: #efdbc0;
 }
 #discover .text {
@@ -187,6 +182,7 @@ p {
 
 #discover {
   gap: 32px;
+  border: 1px solid #000;
 }
 #discover .image-cards-wrapper {
   width: 100%;
@@ -222,7 +218,6 @@ p {
   background: linear-gradient(180deg, #efdbc0 63%, #c3d5c5 100%);
 }
 #feedback .feedback-container {
-  border: 1px solid #000;
   gap: 32px;
 }
 #feedback .feedback-container .feedback-card {
@@ -262,4 +257,69 @@ p {
 #subscribe .text-and-buttons {
   align-items: flex-start;
   gap: 16px;
+}
+
+#transform .left {
+  gap: 32px;
+}
+
+#footer {
+  background-color: #efdbc0;
+  gap: 64px;
+}
+#footer .group {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#footer .group .vertical .title {
+  margin-bottom: 8px;
+}
+#footer .group .vertical .title h4 {
+  color: #311304;
+  font-size: 20px;
+}
+#footer .group .vertical .links ul {
+  list-style-type: none;
+  margin-left: 8px;
+}
+#footer .group .vertical .links ul li {
+  margin: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+#footer .group .vertical#subscribe-footer {
+  gap: 16px;
+}
+#footer .group .vertical#subscribe-footer .subscribe-form {
+  gap: 8px;
+}
+#footer .group .vertical#subscribe-footer .subscribe-form input,
+#footer .group .vertical#subscribe-footer .subscribe-form button {
+  background-color: transparent;
+  border: 1px #311304 solid;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#footer .group .vertical#subscribe-footer .subscribe-form input {
+  flex-grow: 1;
+}
+#footer .group .vertical#subscribe-footer .small {
+  font-size: 14px;
+}
+#footer .group.line {
+  width: 100%;
+  border-bottom: 1px #311304 solid;
+}
+#footer .group .left {
+  gap: 16px;
+}
+#footer .group .left a {
+  font-size: 16px;
+}
+#footer .group .right {
+  gap: 8px;
+}
+#footer .group .right .icon {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

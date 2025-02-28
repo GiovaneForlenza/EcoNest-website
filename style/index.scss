@@ -92,7 +92,6 @@ p {
         }
       }
       .buttons {
-        border: 1px solid #000;
         div {
           border-radius: 50px;
         }
@@ -134,7 +133,6 @@ p {
 .flex-two-col {
   gap: 180px;
   .left {
-    border: 1px solid #000;
     gap: 16px;
     flex-direction: column;
     max-width: 600px;
@@ -178,7 +176,6 @@ p {
 }
 
 #discover {
-  border: 1px solid #000;
   background-color: v.$background-yellow-color;
   .text {
     max-width: 800px;
@@ -188,6 +185,7 @@ p {
 }
 #discover {
   gap: 32px;
+  border: 1px solid #000;
   .image-cards-wrapper {
     width: 100%;
     gap: 32px;
@@ -225,7 +223,6 @@ p {
 #feedback {
   background: v.$yellow-to-green-gradient;
   .feedback-container {
-    border: 1px solid #000;
     gap: 32px;
     .feedback-card {
       background: #fff;
@@ -267,5 +264,76 @@ p {
   .text-and-buttons {
     align-items: flex-start;
     gap: 16px;
+  }
+}
+
+#transform {
+  .left {
+    gap: 32px;
+  }
+}
+
+#footer {
+  background-color: v.$background-yellow-color;
+  gap: 64px;
+  .group {
+    align-items: flex-start;
+    justify-content: space-between;
+    .vertical {
+      .title {
+        margin-bottom: 8px;
+        h4 {
+          color: v.$title-color;
+          font-size: 20px;
+        }
+      }
+      .links {
+        ul {
+          list-style-type: none;
+          margin-left: 8px;
+          li {
+            margin: 8px 0;
+            font-size: 16px;
+            cursor: pointer;
+          }
+        }
+      }
+      &#subscribe-footer {
+        gap: 16px;
+        .subscribe-form {
+          gap: 8px;
+          input,
+          button {
+            background-color: transparent;
+            border: 1px v.$secondary-button-border solid;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+          }
+          input {
+            flex-grow: 1;
+          }
+        }
+        .small {
+          font-size: 14px;
+        }
+      }
+    }
+    &.line {
+      width: 100%;
+      border-bottom: 1px v.$secondary-button-border solid;
+    }
+    .left {
+      gap: 16px;
+      a {
+        font-size: 16px;
+      }
+    }
+    .right{
+      gap: 8px;
+      .icon{
+        cursor: pointer;
+      }
+    }
   }
 }
